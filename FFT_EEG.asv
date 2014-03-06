@@ -1,0 +1,7 @@
+function [ output_args ] = FFT_EEG( input_args)
+% Uses Fast Fourier Transform to accept doubles and return the amplitudes
+% of the given range of frequencies
+% beware, performs absolute value of data as intermediate var 
+
+output_args = abs(fft(input_args)) ;
+
